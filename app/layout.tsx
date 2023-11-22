@@ -1,3 +1,9 @@
+
+
+import '@/app/ui/global.css'
+import { jetbrains } from "@/app/ui/fonts";
+import React from "react";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${jetbrains.className} antialiased`}>{children}</body>
     </html>
   );
 }
