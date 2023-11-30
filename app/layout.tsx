@@ -1,7 +1,7 @@
 
 
 import '@/app/ui/global.css'
-import { jetbrains } from "@/app/ui/fonts";
+import { jetbrains, inter, gitlabSans } from "@/app/ui/fonts";
 import React from "react";
 
 export default function RootLayout({
@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jetbrains.className} antialiased`}>{children}</body>
+      <body className={`${gitlabSans.className} antialiased`}>{children}</body>
     </html>
   );
 }
